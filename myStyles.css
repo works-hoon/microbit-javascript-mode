@@ -1,0 +1,7 @@
+.only_javascript_on .editor-menuitem,
+.only_javascript_on .monacoToolboxDiv {
+	display:none!important;
+}
+.only_javascript_on .editor-menuitem.show_important{
+	display:flex !important;
+}

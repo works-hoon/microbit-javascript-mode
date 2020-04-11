@@ -1,0 +1,21 @@
+{
+	"name": "microbit change JavaScript mode",
+	"version": "1.0",
+	"description": "Change it the code editor to JavaScript mode only. If you don't want to use, disable extensions. 코드 에디터를 자바스크립트 모드로 바꿔줍니다. 사용하지 않으려면 확장프로그램 사용을 끄세요. 자바스크립트 모드에서 모드 변경 메뉴를 보려면 컨트롤+알트+Z 를 누르세요.",
+	"manifest_version": 2,
+	"icons": {
+		"16": "icon16.png",
+		"32": "icon32.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
+	},
+	"permissions": [
+		"https://makecode.microbit.org/*"
+	],
+	"content_scripts": [{
+		"matches": ["https://makecode.microbit.org/*"],
+		"css": ["myStyles.css"],
+		"js": ["jquery-3.5.0.min.js", "contentScript.js"
+		]
+	}]
+}
